@@ -1,17 +1,13 @@
 const chatdisplay=document.getElementById("chatdisplay");
 const sentbutton=document.getElementById("sentbutton");
 const chatbox=document.getElementById("chatbox");
+const emo=document.getElementById("emo");
+const form=document.getElementById("typebox")
 sentbutton.addEventListener("click",(event)=>{
     const chatboxs=document.getElementById("chatbox").value;
-    console.log(chatboxs);
-    chatdisplay.innerText=chatboxs;
-
+    const e=document.getElementById("emo").value;
+    chatdisplay.innerText=chatboxs+e;
+    document.getElementById("chatbox").value=' ';
+    document.getElementById("emo").value='';
 }
 );
-/* const emo=document.getElementById("emo")
-emo.addEventListener("click",(event)=>{
-    const e=document.getElementById("emo").value;
-    chatbox.innerHTML=e;
-    console.log(e);
-})
- */
