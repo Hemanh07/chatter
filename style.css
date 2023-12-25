@@ -1,12 +1,15 @@
 body{
     margin: 10px;
+    background-image: linear-gradient(90deg ,#9af29a 0%,#8c92dc 100%);
 }
-#chatboxcontainer div{
-    border: 2px black double;
-    margin-top: 3px;
-    margin-left:70%;
-   margin-right: 20%;
-    width: max-content;
+#chatboxcontainer>div{
+    
+    border: 2px rgb(214, 46, 46) double;
+    background-color: #b9bcea;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+
 } 
 header{
     display: flex;
@@ -19,12 +22,14 @@ header{
     border-top-left-radius: 20px;
     color: blue;
     font-size: 30px;
-    background-color: darkseagreen;
+    background-color: rgb(45, 255, 45);
 }
 #chatboxcontainer{
-    display:block;
-    justify-content:flex-end;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
     align-items: center;
+    
     height:100%;
     width: 100%;
 }
@@ -40,6 +45,7 @@ header{
 }
 #chatbox{
     width: 80%;
+    border-radius: 5px;
 }
 #typebox{
     display: flex;
@@ -50,4 +56,21 @@ header{
     padding: 3px;
     background-color: aqua;
     font-size: 7px;
-    border: 3px black solid;}
+    border: 3px black solid;
+border-radius: 5px;}
+#cr{
+    width: max-content;
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+#button{
+    background-color: #ffffff;
+border: 0;
+}
+#emo{
+    border-radius: 5px;
+}
+h2{
+    color: red;
+}
