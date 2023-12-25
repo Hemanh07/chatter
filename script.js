@@ -27,7 +27,7 @@ sentbutton.addEventListener("click", (event) => {
     button.addEventListener("click", (event) => {
         console.log("hai")
         localStorage.removeItem(io);
-       newbox.remove();
+       newbox.innerHTML="completed";
       });
     
     button.innerText = "🗑️";
